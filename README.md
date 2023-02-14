@@ -27,6 +27,5 @@ python sc2_pairwise_align_variant.py --sample <sample_id> --fasta <consensus_ass
 sc2_correct_assembly.py will regenerate your consenus assembly while masking sites designated by the user to pad with Ns. This allows the user to remove incorporated artifacts from the assembly, so the fasta can be resubmitted to public repositories. Main processes include [iVar](https://github.com/andersen-lab/ivar) and [minimap2](https://github.com/lh3/minimap2). Outputs include a corrected fasta and a pairwise whole-genome alignment to confirm the correct sites have been masked.
 ```
 python sc2_correct_assembly.py --sample <sample_id> --bam <sample_bam> --ref <reference.fasta> --ref_accession <reference_accession> --sites_to_mask <ref:num_of_bases,ref:num_of_bases
-
 ```
 
